@@ -1,0 +1,209 @@
+
+getgenv().SecureMode = true
+
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "UnixHub",
+   LoadingTitle = "UnixHub...",
+   LoadingSubtitle = "by Oooga Booga#0965",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "UnixHub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "8dbGZxQDP5", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+   },
+   
+   Rayfield:Notify({
+   Title = "Loaded Into UnixHub ",
+   Content = "Have Fun Using UnixHub",
+   Duration = 1,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Close.",
+         Callback = function()
+         print("You Tapped Close")
+      end
+   },
+},
+}),
+   
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "UnixHub Key System",
+      Subtitle = "Please Enter Key",
+      Note = "You Get Block Listed If You Share Your Key",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"vWete3i8Oi","Test","UnixHubYT","Genocide707","xpxq3q2J96SC4gKa","yeUSnSur5Jem7HLM","xHduzjsRy4ajdzPg","a6yaua6aDgQtFzSg","5MdJBEmKhETY7w8f","E4Z4X5gh4sLNGk8P","8cANtWt87mHYDLtp","yjJD3ZNKRBztsJFg","t5NwjHx2gxg8KSg7","7fCXnMy3886GK4p3","t9SWgcawj8cMzzd3","L5MqUYfgPh5UK9Dv","4KPver6mCsQ6fQ8w","FEYLhLjBQEv5dBXC","qH7ENvPDwfHL3Dhg","gf8Lsv9ZS4JUnTT8","6N2Uu5NyBUNuxsQL","metW3Nv5662cZeLG","cQS8kgKQ5qr54LHY","Y7UYuz9DDa9HwxN5","54ZV5pHhxZyc9utw","SNzAWFbhW5yy2NLK","K2jNtzaUR96JvJwz","Jze2RpLDFQzugbv8","fUPgR2WXjJcjTRPj","PS94q4vPBpH3zWYF","DBTnkt9jHtqdQkpe","HedHh824mTVZc2bE","3kuqHjKM9WTCNf8S","hZVZu4WbeuyLHGFp","Bw2Xfe6THPNXqAAw","362cCV3Ba6SMfbnt","CSvHLCmjK83gKpgu","RX9ME2hrkasD9ffy","UdxWNs2LSwvpBMGm","LMq7fthqTwMYqj36","UxHgLq65jgV3sTSbZaD","k7fYja5QydhQhxej","L6rPRdSFcqkxyk9y","s3KkRkyjTVSby64a","6s6VsDj3Vf7NtR2B","vfVHnRmhc4YUJ2eJ","W9k79fskzGhj7fUa","HLaYjDVertW5Qh2f","X2r4tVHNsKgsnDeR","y3jsMLJ77tQ8ZqU2","QGDVPe4Ls7CLzLh3","u3QXG2jZs5JQPUfa","3AuFcsPGVYxsXcFW","273kXf3vw3qUxcUQ","qws6gKCIynEFH1mL","fQ72wUtuYSTurtVK","hN5uDmqQkTtsGRfz","xo5tsESLHk7BWVGD","PeiQhcumE175SqGZ","hNuwZ0y8g5lJcYtm","AGRWr9x17bjCYnug","dtYa8bq41l2xC0Py","KExO4IFbtlY3pG8o","fjvJNPhMz5Vxsyr4","eptZC9wr0mlYSo6Q","wJjzlOAF8ICHdiaT","Q0q6HSv4ftL9OhMZ","rIAdL9ybZBD36Yam","pEAXj8bafx0IM39s","Y0Wxg5sfzJCGqBiu","Uq2wkuHA0O13M7ba","uKDwdkO5oLH7cy9q","M7okDa1jLZy9muCX","kKBXzYb1JvrDPiQA","OImcJB1tZKpdR6a3","Si17UJcX5QpbGmYd","AlM8a03SDYtquoOL","hyacJKYSb2dlXfLm","HYvb1IiWgGu5NQm8","Ow2zcp51HJk0oTmt","I7pn0FagG1PHYAB8","cIBnTF4epqiYs9t3","tgcuzmjCl3Y0SoTa","Ygew62mZfAToJH1l","J8pFchP1beK0z4jY","oXMvL8yG5tSKYmEW","GfJWSg2K3CvxAIu4","EIMaAk9z78uUh5Sj","gUyPw5RqDILhKc0V","Bs3ASvFNR5atZq4P","AVQLYcqD8slteUXj","ZSQ8H9AtB4fFWr7Y","DkPRaISb3mivW49r","Aiw530IuOLyfPZ2F","MaZDgk7USypocQ5N","Pxc2eCQBG0OHuv7z","eaS3w7srDLkIz9QZ","E0KTIpoqJFl19dkb","cT4VMBeOQYJArzIb","wlcQkL35b1qspW8B", "zE97iRWrmptg3JeA", "KsiZy6FE7aVA, pNwVkMNeC8Y6Gi","i2KzFE3S83nymfrRJe5WUvW5vPjh6nxG","2DE29B1DB184F","JdQODKLgxCPru62C"}                
+      
+  ---be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+---Tabs
+
+local LocalPLayerTab = Window:CreateTab("Local", 4483362458) 
+local AimbotTab = Window:CreateTab("Aimbot", 4483362458)
+local TeleportTab = Window:CreateTab("Teleport", 4483362458)
+local TeamTab = Window:CreateTab("Teams", 4483362458)
+local CreditsTab = Window:CreateTab("Credits", 4493362458)
+
+----End Of Tabs
+
+---LocalPlayerTab
+
+local Label = LocalPLayerTab:CreateLabel("LocalPlayer.")
+local Slider = LocalPLayerTab:CreateSlider({
+   Name = "WalkSpeed",
+   Range = {16, 100},
+   Increment = 1,
+   Suffix = "WalkSpeed",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+   -- The variable (Value) is a number which correlates to the value the slider is currently at
+   end,
+})
+
+
+local Slider = LocalPLayerTab:CreateSlider({
+   Name = "JumpPower",
+   Range = {50, 200},
+   Increment = 1,
+   Suffix = "JumpPower",
+   CurrentValue = 50,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = Value
+   -- The variable (Value) is a number which correlates to the value the slider is currently at
+   end,
+})
+
+---EndOfLocalPlayerTab
+
+---AimbotTab
+local label = AimbotTab:CreateLabel("Aimbot.")
+local Button = AimbotTab:CreateButton({
+   Name = "Aimbot.",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zvmiYZZv", true))()
+   end,
+})
+
+local Button = AimbotTab:CreateButton({
+   Name = "BoxEsp.",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zKjj0TQD", true))()
+   end,
+})
+
+local Button = AimbotTab:CreateButton({
+   Name = "FullBodyEsp.",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/7K1Jhmck", true))()  
+  end,
+})
+---EndOfAimbotTab
+
+---TeleportTab
+local Button = TeleportTab:CreateButton({
+   Name = "PoliceGunsTP.",
+   Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(832.789, 98.9568, 2251.31)
+
+  end,
+})
+
+local Button = TeleportTab:CreateButton({
+   Name = "AboveSewerTP.",
+   Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(938.606, 105.0853, 2110.4)
+  end,
+})
+
+local Button = TeleportTab:CreateButton({
+   Name = "PoliceCarTP.",
+   Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(624.044, 104.303, 2494.65)
+  end,
+})
+
+local Button = TeleportTab:CreateButton({
+   Name = "GuardPostTP.",
+   Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(732.999756, 125.1383057, 2590.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+ end,
+})
+
+local Button = TeleportTab:CreateButton({
+   Name = "PrisonRoofTP.",
+   Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(913.399658, 130.1383057, 2381.50073, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+ end,
+})
+---EndOfTeleportTab
+
+---CreditsTab
+local Label3 = CreditsTab:CreateLabel("Owner-Oooga Booga#0965")
+
+local Button = CreditsTab:CreateButton({
+   Name = "Subscribe To My YT(F9).",
+   Callback = function()
+print("https://www.youtube.com/@UnixHub")
+  end,
+})
+local Button = CreditsTab:CreateButton({
+   Name = "joinDiscord(F9).",
+   Callback = function()
+print("https://discord.gg/8dbGZxQDP5")
+  end,
+})
+
+local Button = CreditsTab:CreateButton({
+   Name = "RejoinServer.",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/NfbL6xJq", true))()
+  end,
+})
+---EndOfCreditsTab
+
+---TeamTab
+local Label1 = TeamTab:CreateLabel("SelectRole.")
+    local Button = TeamTab:CreateButton({
+   Name = "Join Guards.",
+   Callback = function()
+   local ohString1 = "Bright blue"
+
+workspace.Remote.TeamEvent:FireServer(ohString1)
+   end,
+})
+
+
+
+local Button = TeamTab:CreateButton({
+   Name = "Join Inmates.",
+   Callback = function()
+local ohString1 = "Bright orange"
+
+workspace.Remote.TeamEvent:FireServer(ohString1)
+   end,
+})
+    
+local Button = TeamTab:CreateButton({
+   Name = "Join Criminals.",
+   Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-920.511, 92.2272, 2144.6)
+
+   end,
+})
+
+---End Of TeamTab
